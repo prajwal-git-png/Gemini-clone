@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="root">
+    <div class="sidebar">
+      <div class="top">
+        <img class="menu" src="./assets/menu_icon.png" alt="" />
+        <div class="new-chat">
+          <img src="./assets/plus_icon.png" alt="" />
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="bottom-item recent-entry">
+          <img src="./assets/question_icon.png" alt="" />
+        </div>
+        <div class="bottom-item recent-entry">
+          <img src="./assets/history_icon.png" alt="" />
+        </div>
+        <div class="bottom-item recent-entry">
+          <img src="./assets/setting_icon.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="nav">
+        <p>Gemini</p>
+        <img src="./assets/logo.png" alt="" />
+      </div>
+      <!-- main message -->
+      <div class="main-container msg-container result ">
+        <div class="greet">
+          <p><span>Hello.dev</span></p>
+          <p>How can i help you today!</p>
+        </div>
+      
+        <div class="main-bottom">
+            <div class="main-bottom">
+
+                <div class="search-box user-input-div">
+                    <input type="text" class="user-input" placeholder="Enter a prompt here" value="" />
+                    <div>
+                      <img src="./assets/gallery_icon.png" alt="" />
+                      <img src="./assets/mic_icon.png" alt="" />
+                      <img src="./assets/send_icon.png"   class="btn" id="btn" alt="" />
+                    </div>
+                  </div>
+                <p class="bottom-info">
+                  Gemini may display inaccurate info, including about people, so
+                  double-check its responses , Your privacy and gemini Apps
+                </p>
+              </div>
+              <!-- Chat window -->
+              <div class="chat-window" id="chat-window"></div>
+            </div>
+          </div>
+        </div>
+        <script type="importmap">
+          { "imports": { "@google/generative-ai": "https://esm.run/@google/generative-ai" } }
+        </script>
+        <script type="module" src="script.js"></script>
+      </body>
+      </html>
